@@ -18,7 +18,7 @@ public class CountriesRestController {
     }
 
     @GetMapping("/countries")
-    public CountryUtil.CountryResponse getCountriesWithHighestPopulationDensityAndMostBorderingCountries() {
+    public CountryUtil.CountryResponse getCountriesWithHighestPopulationDensityAndMostBorderingCountriesInAsia() {
         List<Country> countries = countryService.getCountries(new Filter(Filter.Region.ALL, List.of("name", "region", "population", "area", "borders", "cca3")));
 
         return CountryUtil.getCountriesWithHighestPopulationDensityAndMostBorderingCountries(countries, "asia");
