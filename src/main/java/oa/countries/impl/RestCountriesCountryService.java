@@ -18,8 +18,8 @@ import java.util.concurrent.TimeUnit;
 @Service
 public class RestCountriesCountryService implements CountryService {
     private final Logger LOGGER = LoggerFactory.getLogger(RestCountriesCountryService.class);
-    private CountryHttpService countryHttpService;
-    private CacheManager cacheManager;
+    private final CountryHttpService countryHttpService;
+    private final CacheManager cacheManager;
 
     public RestCountriesCountryService(CountryHttpService countryHttpService, CacheManager cacheManager) {
         this.countryHttpService = countryHttpService;
