@@ -12,4 +12,4 @@ Also exposed health probes (e.g. liveness and readiness). When deployed in produ
 1. Clone the repository
 2. Open it in your desired IDE
 3. Run the application (requires Java 21)
-4. When the application has started you can request for the desired information at `localhost:8080/countries` with a GET request. The standard port is 8080 but can easily be changed in `application.properties` with `server.port={desired port}`
+4. When the application has started you can request for the desired information at `localhost:8080/countries` with a GET request (e.g. using Postman). The standard port is 8080 but can easily be changed in `application.properties` with `server.port={desired port}`
